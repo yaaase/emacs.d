@@ -46,6 +46,7 @@
  ;; If there is more than one, they won't work right.
  )
 (global-set-key (kbd "C-%") 'goto-match-paren)
+(global-set-key (kbd "C-\"") 'toggle-quotes)
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 (require 'linum)
