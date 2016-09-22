@@ -53,6 +53,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
                                         ;old: "#876CA1"
+ `(default ((t (:background "gray13"))))
  '(font-lock-comment-face ((t (:foreground "#656361"))))
  '(font-lock-comment-delimiter-face ((t (:foreground "#656361"))))
  '(font-lock-string-face ((t (:foreground "#CB9B48"))))
