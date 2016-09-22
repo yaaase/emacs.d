@@ -52,8 +52,9 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(font-lock-comment-face ((t (:foreground "#876ca1"))))
- '(font-lock-comment-delimiter-face ((t (:foreground "#876ca1"))))
+ ;old: "#876CA1"
+ '(font-lock-comment-face ((t (:foreground "#656361"))))
+ '(font-lock-comment-delimiter-face ((t (:foreground "#656361"))))
  '(font-lock-string-face ((t (:foreground "#CB9B48"))))
  )
 (global-set-key (kbd "C-%") 'goto-match-paren)
