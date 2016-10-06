@@ -19,6 +19,7 @@
  '(font-lock-comment-delimiter-face ((t (:foreground "#5E5E5E"))))
  '(font-lock-comment-face ((t (:foreground "#5E5E5E"))))
  '(font-lock-constant-face ((t (:foreground "#A1877E"))))
+ '(web-mode-symbol-face ((t (:foreground "#A1877E"))))
  '(font-lock-doc-face ((t (:foreground "#7d949b"))))
  '(font-lock-function-name-face ((t (:foreground "#7a8bbd"))))
  '(font-lock-keyword-face ((t (:weight bold :foreground "#986F61"))))
