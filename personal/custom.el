@@ -54,7 +54,6 @@
 (scroll-bar-mode -1)
 (require 'linum)
 (require 'smartparens)
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/personal/sass-mode.el"))
 (autoload 'scss-mode "scss-mode")
 (add-to-list 'auto-mode-alist '("\\.scss\\'" . scss-mode))
 (require 'web-mode)
