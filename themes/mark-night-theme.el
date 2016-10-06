@@ -2,7 +2,7 @@
   "Created 2016-10-06.")
 
 (custom-theme-set-faces
- 'mark
+ 'mark-night
  '(default ((t (:family "Menlo" :foundry "nil" :width normal :height 120 :weight normal :slant normal :underline nil :overline nil :strike-through nil :box nil :inverse-video nil :foreground "#C0B6A8" :background "gray13" :stipple nil :inherit nil))))
  '(cursor ((t (:background "#D0C179"))))
  '(fixed-pitch ((t (:family "Monospace"))))

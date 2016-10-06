@@ -40,13 +40,6 @@
              '("melpa" . "https://melpa.org/packages/") t)
 (package-initialize)
 
-(tool-bar-mode -1)
-(scroll-bar-mode -1)
-(require 'linum)
-(global-linum-mode)
-(setq ring-bell-function 'ignore)
-(windmove-default-keybindings)
-(setq whitespace-style '(face tabs empty trailing))
 ;;; Code:
 (defvar current-user
       (getenv
@@ -135,8 +128,6 @@ by Prelude.")
     (load prelude-modules-file)
   (message "Missing modules file %s" prelude-modules-file)
   (message "You can get started by copying the bundled example file"))
-
-(load-theme 'marktheme t)
 
 ;; config changes made through the customize UI will be store here
 (setq custom-file (expand-file-name "custom.el" prelude-personal-dir))
