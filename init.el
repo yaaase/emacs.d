@@ -167,7 +167,7 @@ by Prelude.")
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
-
+(add-hook 'flycheck-mode-hook #'flycheck-rust-setup)
 (unless (package-installed-p 'cider)
   (package-install 'cider))
 (require 'helm-config)
