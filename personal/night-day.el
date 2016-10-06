@@ -1,0 +1,8 @@
+(defun dark-mode ()
+  (interactive)
+  (disable-theme 'mark-day)
+  (load-theme 'mark-night))
+(defun light-mode ()
+  (interactive)
+  (disable-theme 'mark-night)
+  (load-theme 'mark-day))
