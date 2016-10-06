@@ -1,4 +1,4 @@
-(deftheme mark
+(deftheme mark-night
   "Created 2016-10-06.")
 
 (custom-theme-set-faces
@@ -48,4 +48,4 @@
  '(next-error ((t (:inherit (region)))))
  '(query-replace ((t (:inherit (isearch))))))
 
-(provide-theme 'mark)
+(provide-theme 'mark-night)
