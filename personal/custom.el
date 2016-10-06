@@ -62,9 +62,8 @@
 (global-linum-mode)
 (global-unset-key "\C-\\")
 (setq global-whitespace-mode 0)
-(setq flycheck-rust-cargo-executable "/usr/local/bin/cargo")
 (setq ring-bell-function 'ignore)
-(setq prelude-whitespace nil)
+;(setq prelude-whitespace nil)
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 (disable-theme 'deeper-blue)
 (load-theme 'mark-night)
@@ -72,16 +71,6 @@
 (add-hook 'rust-mode-hook #'flycheck-rust-setup)
 (require 'helm-config)
 (helm-mode 1)
-(require 'prelude-helm-everywhere)
+(setq-default flycheck-disabled-checkers '(emacs-lisp-checkdoc))
+;(require 'prelude-helm-everywhere)
 0
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(default ((t (:background "gray13"))))
- '(font-lock-comment-delimiter-face ((t (:foreground "#5E5E5E"))))
- '(font-lock-comment-face ((t (:foreground "#5E5E5E"))))
- '(font-lock-keyboard-face ((t (:foreground "#A26057"))))
- '(font-lock-keyword-face ((t (:foreground "#986F61"))))
- '(font-lock-string-face ((t (:foreground "#CB9B48")))))
