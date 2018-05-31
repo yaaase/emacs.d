@@ -38,12 +38,13 @@
 (require 'package)
 (add-to-list 'package-archives
              '("melpa" . "https://melpa.org/packages/") t)
+(setq package-load-list '((cider "0.14.0") all))
 (package-initialize)
 
 ;;; Code:
 (defvar current-user
-      (getenv
-       (if (equal system-type 'windows-nt) "USERNAME" "USER")))
+  (getenv
+   (if (equal system-type 'windows-nt) "USERNAME" "USER")))
 
 (message "Prelude is powering up... Be patient, Master %s!" current-user)
 
@@ -78,13 +79,13 @@ by Prelude.")
   (make-directory prelude-savefile-dir))
 
 (defun prelude-add-subfolders-to-load-path (parent-dir)
- "Add all level PARENT-DIR subdirs to the `load-path'."
- (dolist (f (directory-files parent-dir))
-   (let ((name (expand-file-name f parent-dir)))
-     (when (and (file-directory-p name)
-                (not (string-prefix-p "." f)))
-       (add-to-list 'load-path name)
-       (prelude-add-subfolders-to-load-path name)))))
+  "Add all level PARENT-DIR subdirs to the `load-path'."
+  (dolist (f (directory-files parent-dir))
+    (let ((name (expand-file-name f parent-dir)))
+      (when (and (file-directory-p name)
+                 (not (string-prefix-p "." f)))
+        (add-to-list 'load-path name)
+        (prelude-add-subfolders-to-load-path name)))))
 
 ;; add Prelude's directories to Emacs's `load-path'
 (add-to-list 'load-path prelude-core-dir)
