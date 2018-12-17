@@ -160,6 +160,8 @@ by Prelude.")
  ;; If there is more than one, they won't work right.
  )
 (add-hook 'flycheck-mode-hook #'flycheck-rust-setup)
+(with-eval-after-load 'flycheck
+  (setq-default flycheck-disabled-checkers '(ruby-rubocop)))
 (unless (package-installed-p 'cider)
   (package-install 'cider))
 (require 'helm-config)
